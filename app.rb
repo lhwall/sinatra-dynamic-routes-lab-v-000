@@ -13,6 +13,8 @@ get "/square/:number" do
 end
 
 get "say/:number/:phrase" do 
-  "#{params[:number].do {puts params[:phrase]}}"
+  "#{params[:number].times {puts params[:phrase]}}"
+end 
+
 
 end
