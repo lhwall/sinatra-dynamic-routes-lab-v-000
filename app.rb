@@ -12,7 +12,7 @@ get "/square/:number" do
 "#{(params[:number].to_i**2).to_s}"
 end
 
-get "say/:number/:phrase" do
+get "/say/:number/:phrase" do
   "#{params[:number].times {puts params[:phrase]}}"
 end
 
